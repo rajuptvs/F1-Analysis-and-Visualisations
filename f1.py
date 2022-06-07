@@ -10,7 +10,7 @@ import streamlit as st
 
 st.header('F1 Qualifying Dashboard')
 
-ff1.Cache.enable_cache(cache_dir='c:\\Users\\Rajup\\AppData\\Local\\Programs\\Python\\Python310\\lib\\cache') 
+#ff1.Cache.enable_cache(cache_dir='c:\\Users\\Rajup\\AppData\\Local\\Programs\\Python\\Python310\\lib\\cache') 
 year = st.number_input('Enter Year',min_value=1, max_value=3000,step=1)
 gp = st.text_input('Enter Grand Prix Location')
 sessiontypechoice=st.number_input('Enter 1 for qualifying or 2 for race',min_value=1, max_value=2,step=1)

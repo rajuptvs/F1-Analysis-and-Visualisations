@@ -1,0 +1,4 @@
+fastf1==2.2.8   
+streamlit==1.10.0
+matplotlib==3.5.1
+timple==0.1.5
