@@ -27,6 +27,7 @@ def app():
         sessiontype='R'
     else:
         print("Unknown choice")
+    
 
     quali = ff1.get_session(year, gp,sessiontype )
     quali.load()
