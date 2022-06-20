@@ -69,9 +69,17 @@ def app():
 
 
 
-    fastest_1=laps_1.pick_fastest()
-    fastest_2=laps_2.pick_fastest()
+    d1=laps_1.pick_fastest()
+    d2=laps_2.pick_fastest()
 
+    # handling the case to choose the fastest lap of the two drivers
+
+    if d1.LapTime < d2.LapTime:
+        fastest_1=d1
+        fastest_2=d2
+    else:
+        fastest_1=d2
+        fastest_2=d1
     
 
     # total_race1=laps_1.get_car_data().add_distance()
@@ -202,10 +210,7 @@ def app():
 
     ax.legend()
 
-    #cbaxes = fig.add_axes([0.25, 0.05, 0.5, 0.05])
-    #normlegend = mpl.colors.Normalize(vmin=color.min(), vmax=color.max())
-    #legend = mpl.colorbar.ColorbarBase(cbaxes, norm=normlegend, cmap=colormap, orientation="horizontal")
-
+    
     plt.show()
     st.pyplot(fig1)
 
