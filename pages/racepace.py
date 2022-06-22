@@ -23,6 +23,7 @@ def app():
     gp = st.text_input('Enter Grand Prix Location')
     #sessiontypechoice=st.number_input('Enter 1 for qualifying or 2 for race',min_value=1, max_value=2,step=1)
     if gp != "":
+        
         st.write('The current selectd GP is ' + str(year) + ' '+gp+' Grand Prix ')
 
         #ff1.plotting.setup_mpl()
@@ -142,3 +143,5 @@ def app():
         fig.savefig(session.event['EventName']+" racepace.jpg",dpi=800)
 
         plt.show()
+        
+    
